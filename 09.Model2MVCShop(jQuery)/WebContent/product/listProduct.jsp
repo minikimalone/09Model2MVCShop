@@ -27,13 +27,12 @@
 			 $( "td.ct_btn01:contains('°Ë»ö')" ).on("click" , function() {
 				fncGetList(1);
 			});
-			
-			 
-	
 			 
 			 $( ".ct_list_pop td:nth-child(3)" ).css("color" , "red");
 			 $("h7").css("color" , "red");
 			 $(".ct_list_pop:nth-child(4n+6)" ).css("background-color" , "whitesmoke");		
+			 
+		
 	 });	
 	 
 	 
@@ -149,6 +148,8 @@
 			<td></td>
 			
 		
+	
+	
 		<c:if test="${param.menu eq 'manage'}">
 		
 		<td align="left"><a href="/product/updateProductView?prodNo=${product.prodNo}&menu=${param.menu}">${product.prodName}</a></td>
@@ -158,6 +159,7 @@
 		
 		<td align="left"><a href="/product/getProduct?prodNo=${product.prodNo}&menu=${param.menu}">${product.prodName}</a></td>
 		</c:if>	
+		
 		
 		
 		<td align="left">${product.price}</td>

@@ -55,5 +55,10 @@ public class ProductDaoImpl implements ProductDao{
 		public int getTotalCount(Search search) throws Exception {
 			return sqlSession.selectOne("ProductMapper.getTotalCount", search);
 		}
+		
+
+//		public void updateQuantity(Product product) throws Exception {
+//			sqlSession.update("ProductMapper.updateProduct", product);
+//		}
 	}
 	
